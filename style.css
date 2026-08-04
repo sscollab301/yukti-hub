@@ -25,6 +25,9 @@ h1 {
 .mainlogo {
     color: #D99B7F;
 }
+#logocolor{
+    color: #D99B7F;
+}
 
 .solution {
     display: flex;
@@ -116,7 +119,7 @@ a {
 
 .box {
     display: flex;
-       background: linear-gradient(135deg, #0F3040, #D99B7F);
+    background: linear-gradient(135deg, #1b5674a4, #D99B7F);
     width: 600px;
     height: 300px;
     margin-top: 50px;
@@ -172,7 +175,7 @@ a {
 #box1 {
     height: 300px;
     width: 300px;
-    background-color: #c47e5d;
+    background: linear-gradient(135deg, #0F3040, #D99B7F);
     border: 2px solid black;
     border-radius: 40px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -210,7 +213,7 @@ a {
 #box2 {
     height: 300px;
     width: 300px;
-    background-color: #D99B7F;
+   background: linear-gradient(150deg, #0F3040, #D99B7F);
     border: 2px solid black;
     border-radius: 40px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -317,7 +320,7 @@ a {
 .box3 {
     height: 300px;
     width: 300px;
-    background-color: #c47e5d;
+   background: linear-gradient(135deg, #0F3040, #D99B7F);
     border: 2px solid black;
     border-radius: 40px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -355,7 +358,7 @@ a {
 .box4 {
     height: 300px;
     width: 300px;
-    background-color: #D99B7F;
+    background: linear-gradient(135deg, #0F3040, #D99B7F);
     border: 2px solid black;
     border-radius: 40px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -566,3 +569,19 @@ a {
     background: #7a3f2c;
     transform: translateY(-2px);
 } 
+/*--------------LOGIN PAGE CSS------------------*/
+#login-page-about{
+    /* display:flex;
+    justify-content:center; */
+    align-items:center;
+}
+.sublogin{
+    display:flex;
+    justify-content:space-between;
+}
+#login-page-about h2{
+    font-size: 42px;
+    margin-bottom: 12px;
+    color: #0f3040;
+    padding-left:30rem;
+}
