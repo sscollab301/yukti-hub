@@ -396,15 +396,7 @@ a {
 #navfuction {
     color: #A56F63;
 }
-/* .login-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    height: 400px;
-    width: 400px;
-    border: 3px solid ;
-} */
+
  .detail{
     display: flex;
     align-items: center;
@@ -469,7 +461,7 @@ a {
 }
 
 #describe-idea {
-    height: 80px;
+    height: 100px;
 }
 
 .login-button{
@@ -585,3 +577,12 @@ a {
     color: #0f3040;
     padding-left:30rem;
 }
+#h-2{
+    font-style:italic;
+    color: #1e6385;
+}
+#h-4{
+    font-style:italic;
+    color: #1e6385;
+}
+
