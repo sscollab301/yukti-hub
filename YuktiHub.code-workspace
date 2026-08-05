@@ -8,6 +8,7 @@
 		}
 	],
     "settings": {
-        "liveServer.settings.multiRootWorkspaceName": "Pictures"
+		"liveServer.settings.multiRootWorkspaceName": "Pictures",
+		"liveServer.settings.port": 5501
     }
 }
