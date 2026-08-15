@@ -24,25 +24,30 @@ h1 {
 }
 
 .mainlogo {
+    font-weight: 1000;
     color: #D99B7F;
 }
 #logocolor{
+    font-weight: 800;
     color: #D99B7F;
 }
 
 .solution {
+    font-weight: 1000;
     display: flex;
     align-items: center;
     color: #D99B7F;
 }
 
 .share {
+    font-weight: 1000;
     display: flex;
     align-items: center;
     color: rgb(209, 59, 255);
 }
 
 .discover {
+    font-weight: 1000;
     display: flex;
     align-items: center;
     color: rgb(209, 59, 255);
@@ -57,10 +62,11 @@ h1 {
 }
 
 .button1 {
+    font-weight: 700;
     border-radius: 20px;
     width: 100px;
     height: 30px;
-    background-color: chocolate;
+    background-color: #D99B7F;
 }
 
 .border {
