@@ -7,7 +7,6 @@ h1 {
     color: blueviolet;
 }
 
-
 .navbar {
     height: 60px;
     background-color: #0F3040;
@@ -100,7 +99,7 @@ h1 {
 
 .nav2 {
     height: 40px;
-    background-color: #68605c;
+    background-color: rgb(92, 92, 92);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -124,9 +123,12 @@ a {
     align-items: center;
 }
 
+/* Updated box rule with animated moving background light */
 .box {
     display: flex;
     background: linear-gradient(135deg, #1b5674a4, #D99B7F);
+    background-size: 200% 200%;
+    animation: movingLight 10s ease infinite alternate;
     width: 600px;
     height: 300px;
     margin-top: 50px;
@@ -140,6 +142,19 @@ a {
     border-radius: 25%;
     overflow: hidden;
     position: relative;
+}
+
+/* Keyframes controlling background motion */
+@keyframes movingLight {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
 }
 
 .solgun {
@@ -220,7 +235,7 @@ a {
 #box2 {
     height: 300px;
     width: 300px;
-   background: linear-gradient(150deg, #0F3040, #D99B7F);
+    background: linear-gradient(150deg, #0F3040, #D99B7F);
     border: 2px solid black;
     border-radius: 40px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -258,14 +273,13 @@ a {
 .line {
     margin-top: 50px;
     padding:30px;
-    /* width:100%; */
     min-height: 120px;
     background: linear-gradient(135deg, #0F3040, #D99B7F);
     border-radius:24px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    box-shadow:0 10px 30px rgba(0,0,0,0,0.08);
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
     overflow:hidden;
     position:relative;
 }
@@ -279,8 +293,6 @@ a {
     top:-40px;
     right:-40px;
     animation:flowtglow 5s ease-in-out infinite;
-
-
 }
 .line h2{
     font-size:2.2rem;
@@ -293,7 +305,6 @@ a {
     color: #dfdfdf;
     margin-top:8px;
     z-index:1;
-
 }
 .line .idea-tags{
     display:flex;
@@ -327,7 +338,7 @@ a {
 .box3 {
     height: 300px;
     width: 300px;
-   background: linear-gradient(135deg, #0F3040, #D99B7F);
+    background: linear-gradient(135deg, #0F3040, #D99B7F);
     border: 2px solid black;
     border-radius: 40px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -404,14 +415,15 @@ a {
     color: #A56F63;
 }
 
- .detail{
+.detail{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
- }
- .login-page {
-      background: linear-gradient(135deg, #0F3040, #D99B7F);
+}
+
+.login-page {
+    background: linear-gradient(135deg, #0F3040, #D99B7F);
     width: 1100px;
     min-height: 420px;
     border-radius: 30px;
@@ -432,7 +444,7 @@ a {
 .login-side h1 {
     font-size: 70px;
     margin-bottom: 20px;
-       color: #e7ae80e3;
+    color: #e7ae80e3;
 }
 
 .login-side p {
@@ -468,7 +480,7 @@ a {
 }
 
 #describe-idea {
-    height: 100px;
+    height: 80px;
 }
 
 .login-button{
@@ -482,6 +494,7 @@ a {
     color: white;
     cursor: pointer;
 }
+
 .about-section {
     margin-top: 50px;
     padding: 40px;
@@ -568,7 +581,7 @@ a {
     background: #7a3f2c;
     transform: translateY(-2px);
 } 
-/*--------------LOGIN PAGE CSS------------------*/
+
 #login-page-about{
     align-items:center;
 }
@@ -582,12 +595,80 @@ a {
     color: #0f3040;
     padding-left:30rem;
 }
-#h-2{
-    font-style:italic;
-    color: #1e6385;
-}
-#h-4{
-    font-style:italic;
-    color: #1e6385;
-}
+/* this is the discover file css code  */
+.line {
+    margin: 40px;
+    padding: 30px;
+     min-height: 120px;
+     background: linear-gradient(135deg, #0F3040, #D99B7F);
+     border-radius: 24px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+     position: relative;
+     overflow: hidden;
 
+}
+.content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 0 40px 50px 40px;
+            justify-content: center;
+        }
+
+        .idea-card {
+            width: 340px;
+            background: linear-gradient(135deg, #0F3040, #D99B7F);
+            border: 2px solid black;
+            border-radius: 30px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .idea-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .badge {
+            background: #D99B7F;
+            color: #0F3040;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            display: inline-block;
+        }
+
+        .idea-card h3 {
+            color: white;
+            margin-top: 15px;
+            font-size: 22px;
+        }
+
+        .idea-card p {
+            color: #dfdfdf;
+            font-size: 14px;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .upvotes {
+            color: antiquewhite;
+            font-weight: bold;
+        }
+
+        .details-btn {
+            color: #D99B7F;
+            font-weight: bold;
+        }
