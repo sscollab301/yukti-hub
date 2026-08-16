@@ -33,11 +33,22 @@
                 Solution
             </p></a>
         </div>
-        <div class="share border ">
-            <a href="#" id="navbar-a-color"><p>
-                Share
-            </p>
-            </a>
+       <div class="share border ">
+            <a href="#" class="navbar-a-color" id="sharebutton" class="nav-link">Share</a>
+        </div>
+        <div id="sharemodal" class="page-overlay">
+            <div class="sharebox">
+                <span class="closebtn" id="closebutton">&times;</span>
+                <h3 class="modal-title">Share YuktiHub</h3>
+                <p class="share-text">copy the link below to share this page ot other
+
+                </p>
+                <div class="copy-box">
+                    <input type="text" id="sharelink" value="http://127.0.0.1:5500/index.html#"  readonly />
+                    <button id="copybutton">copy</button>  
+                </div>
+            </div>
+
         </div>
         <div class="discover border ">
            <a href="#" id="navbar-a-color"> <p>
@@ -154,6 +165,44 @@
    
     
 </div>
+<script>
+ const sharebutton = document.getElementById('sharebutton');
+const sharemodal = document.getElementById('sharemodal');
+const closebutton = document.getElementById('closebutton');
+const copybutton = document.getElementById('copybutton');
+const sharelink = document.getElementById('sharelink');
+const topdown = document.getElementById('topdown');
 
+// Open Modal when clicking Share
+sharebutton.addEventListener('click', (e) => {
+  e.preventDefault();
+  sharemodal.style.display = 'flex';
+});
+
+// Close Modal on X click
+closebutton.addEventListener('click', () => {
+  sharemodal.style.display = 'none';
+});
+
+// Close Modal on Outside Click
+window.addEventListener('click', (e) => {
+  if (e.target === sharemodal) {
+    sharemodal.style.display = 'none';
+  }
+});
+
+// Copy link and trigger top-down toast animation
+copybutton.addEventListener('click', () => {
+  navigator.clipboard.writeText(sharelink.value).then(() => {
+    // Show Top-Down Toast
+    topdown.classList.add('show');
+
+    // Automatically hide Toast after 2.5 seconds
+    setTimeout(() => {
+      topdown.classList.remove('show');
+    }, 2500);
+  });
+});
+</script>
 </body>
 </html>

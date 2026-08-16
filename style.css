@@ -44,7 +44,97 @@ h1 {
     align-items: center;
     color: rgb(209, 59, 255);
 }
-
+/* share button box pop up css code  */
+.page-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.sharebox {
+  background: #2a3d45;
+  color: #ffffff;
+  padding: 24px 28px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 480px; /* Medium size constraint */
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.closebtn {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #a0a0a0;
+}
+.closebtn:hover { color: #fff; }
+.modal-title { 
+    margin: 0 0 8px 0; 
+    font-size: 1.25rem; 
+}
+.share-text { 
+    margin: 0 0 16px 0; 
+    color: #b0bec5; 
+    font-size: 0.9rem;
+ }
+ .copy-box {
+  display: flex;
+  gap: 10px;
+}
+.copy-box input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #3a505b;
+  background: #1c282e;
+  color: #fff;
+  font-size: 0.9rem;
+  outline: none;
+}
+.copy-box button {
+  padding: 10px 20px;
+  background: #e0915c;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.copy-box button:hover {
+  background: #cf7c43;
+}
+.topdown {
+  position: fixed;
+  top: -70px; /* Hidden above screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2e7d32;
+  color: #ffffff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  z-index: 2000;
+  opacity: 0;
+  transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
+.topdown.show {
+  top: 25px; /* Slides down */
+  opacity: 1;
+}
+/* herre it completed teh code css for share  */
 .discover {
     font-weight: 1000;
     display: flex;
@@ -56,7 +146,7 @@ h1 {
     display: flex;
     align-items: center;
 }
-#navbar-a-color {
+#navbar-a-color, .navbar-a-color {
     color: #D99B7F;
 }
 
@@ -123,12 +213,12 @@ a {
     align-items: center;
 }
 
-/* Updated box rule with animated moving background light */
+
 .box {
     display: flex;
     background: linear-gradient(135deg, #1b5674a4, #D99B7F);
     background-size: 200% 200%;
-    animation: movingLight 10s ease infinite alternate;
+    animation: movingLight 7s ease infinite alternate;
     width: 600px;
     height: 300px;
     margin-top: 50px;
@@ -611,64 +701,64 @@ a {
 
 }
 .content {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            padding: 0 40px 50px 40px;
-            justify-content: center;
-        }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 40px 50px 40px;
+    justify-content: center;
+}
 
-        .idea-card {
-            width: 340px;
-            background: linear-gradient(135deg, #0F3040, #D99B7F);
-            border: 2px solid black;
-            border-radius: 30px;
-            padding: 25px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            transition: transform 0.4s ease, box-shadow 0.4s ease;
-        }
+.idea-card {
+    width: 340px;
+    background: linear-gradient(135deg, #0F3040, #D99B7F);
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
 
-        .idea-card:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-        }
+.idea-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
 
-        .badge {
-            background: #D99B7F;
-            color: #0F3040;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 14px;
-            display: inline-block;
-        }
+.badge {
+    background: #D99B7F;
+    color: #0F3040;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    display: inline-block;
+}
 
-        .idea-card h3 {
-            color: white;
-            margin-top: 15px;
-            font-size: 22px;
-        }
+.idea-card h3 {
+    color: white;
+    margin-top: 15px;
+    font-size: 22px;
+}
 
-        .idea-card p {
-            color: #dfdfdf;
-            font-size: 14px;
-            margin: 15px 0;
-            line-height: 1.5;
-        }
+.idea-card p {
+    color: #dfdfdf;
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
 
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-        }
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 
-        .upvotes {
-            color: antiquewhite;
-            font-weight: bold;
-        }
+.upvotes {
+    color: antiquewhite;
+    font-weight: bold;
+}
 
-        .details-btn {
-            color: #D99B7F;
-            font-weight: bold;
-        }
+.details-btn {
+    color: #D99B7F;
+    font-weight: bold;
+}
