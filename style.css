@@ -1,5 +1,5 @@
 * {
-    margin: 0px;
+    margin: 0;
     font-family: Arial, sans-serif;
 }
 
@@ -8,7 +8,7 @@ h1 {
 }
 
 .navbar {
-    height: 60px;
+    height: 3.75rem;
     background-color: #0F3040;
     display: flex;
     justify-content: space-evenly;
@@ -17,8 +17,8 @@ h1 {
 .navlogo {
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 110px;
+    height: 3.125rem;
+    width: 6.875rem;
     align-items: center;
 }
 
@@ -58,51 +58,51 @@ h1 {
 .sharebox {
   background: #2a3d45;
   color: #ffffff;
-  padding: 24px 28px;
-  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  border-radius: 0.875rem;
   width: 90%;
-  max-width: 480px; /* Medium size constraint */
+  max-width: 30rem; /* Medium size constraint */
   position: relative;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.75rem 1.875rem rgba(0, 0, 0, 0.4);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
 .closebtn {
   position: absolute;
-  top: 14px;
-  right: 18px;
-  font-size: 24px;
+  top: 0.875rem;
+  right: 1.125rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: #a0a0a0;
 }
 .closebtn:hover { color: #fff; }
 .modal-title { 
-    margin: 0 0 8px 0; 
+    margin: 0 0 0.5rem 0; 
     font-size: 1.25rem; 
 }
 .share-text { 
-    margin: 0 0 16px 0; 
+    margin: 0 0 1rem 0; 
     color: #b0bec5; 
     font-size: 0.9rem;
  }
  .copy-box {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 .copy-box input {
   flex: 1;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #3a505b;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid #3a505b;
   background: #1c282e;
   color: #fff;
   font-size: 0.9rem;
   outline: none;
 }
 .copy-box button {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background: #e0915c;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -113,25 +113,25 @@ h1 {
 }
 .topdown {
   position: fixed;
-  top: -70px; /* Hidden above screen */
+  top: -4.375rem; /* Hidden above screen */
   left: 50%;
   transform: translateX(-50%);
   background-color: #2e7d32;
   color: #ffffff;
-  padding: 12px 22px;
-  border-radius: 30px;
+  padding: 0.75rem 1.375rem;
+  border-radius: 1.875rem;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
   font-weight: 600;
   font-size: 0.95rem;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.25);
   z-index: 2000;
   opacity: 0;
   transition: top 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
 }
 .topdown.show {
-  top: 25px; /* Slides down */
+  top: 1.5625rem; /* Slides down */
   opacity: 1;
 }
 /* herre it completed teh code css for share  */
@@ -152,14 +152,14 @@ h1 {
 
 .button1 {
     font-weight: 700;
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
+    border-radius: 1.25rem;
+    width: 6.25rem;
+    height: 1.875rem;
     background-color: #D99B7F;
 }
 
 .border {
-    border: 1.5px solid #0F3040 ;
+    border: 0.09375rem solid #0F3040 ;
 }
 
 .border:hover {
@@ -172,23 +172,23 @@ h1 {
 }
 
 #searchbar {
-    height: 20px;
-    width: 300px;
+    height: 1.25rem;
+    width: 18.75rem;
 }
 
 .icon {
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 25px;
-    width: 25px;
+    height: 1.5625rem;
+    width: 1.5625rem;
     background-color: #D99B7F;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
 }
 
 .nav2 {
-    height: 40px;
+    height: 2.5rem;
     background-color: rgb(92, 92, 92);
     overflow: hidden;
     display: flex;
@@ -200,7 +200,7 @@ h1 {
     white-space: nowrap;
     animation: slideText 8s linear infinite;
     color: white;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
 a {
@@ -219,16 +219,16 @@ a {
     background: linear-gradient(135deg, #1b5674a4, #D99B7F);
     background-size: 200% 200%;
     animation: movingLight 7s ease infinite alternate;
-    width: 600px;
-    height: 300px;
-    margin-top: 50px;
+    width: 37.5rem;
+    height: 18.75rem;
+    margin-top: 3.125rem;
     text-align: center;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
     border-radius: 25%;
     overflow: hidden;
     position: relative;
@@ -268,52 +268,52 @@ a {
 
 .selection {
     background-color: #D99B7F;
-    height: 25px;
-    width: 25px;
+    height: 1.5625rem;
+    width: 1.5625rem;
     justify-content: center;
     display: flex;
     align-items: center;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 0.3125rem;
+    border-bottom-left-radius: 0.3125rem;
 }
 
 .content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 #box1 {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     background: linear-gradient(135deg, #0F3040, #D99B7F);
-    border: 2px solid black;
-    border-radius: 40px;
+    border: 0.125rem solid black;
+    border-radius: 2.5rem;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 #box1:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.625rem) scale(1.03);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.25);
 }
 
 #box1 p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px 0px 12px 30px;
+    margin: 0.75rem 0 0.75rem 1.875rem;
     background-color: antiquewhite;
-    border-radius: 40px;
-    width: 200px;
+    border-radius: 2.5rem;
+    width: 12.5rem;
 }
 
 .imagebox-1 {
-    margin: 15px 25px 15px 30px;
-    height: 200px;
-    width: 200px;
+    margin: 0.9375rem 1.5625rem 0.9375rem 1.875rem;
+    height: 12.5rem;
+    width: 12.5rem;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
@@ -323,35 +323,35 @@ a {
 }
 
 #box2 {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     background: linear-gradient(150deg, #0F3040, #D99B7F);
-    border: 2px solid black;
-    border-radius: 40px;
+    border: 0.125rem solid black;
+    border-radius: 2.5rem;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 #box2:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.625rem) scale(1.03);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.25);
 }
 
 #box2 p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px 0px 12px 30px;
+    margin: 0.75rem 0 0.75rem 1.875rem;
     background-color: antiquewhite;
-    border-radius: 40px;
-    width: 200px;
+    border-radius: 2.5rem;
+    width: 12.5rem;
 }
 
 .imagebox-2 {
-    margin: 15px 25px 15px 30px;
-    height: 200px;
-    width: 200px;
+    margin: 0.9375rem 1.5625rem 0.9375rem 1.875rem;
+    height: 12.5rem;
+    width: 12.5rem;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
@@ -361,53 +361,53 @@ a {
 }
 
 .line {
-    margin-top: 50px;
-    padding:30px;
-    min-height: 120px;
+    margin-top: 3.125rem;
+    padding: 1.875rem;
+    min-height: 7.5rem;
     background: linear-gradient(135deg, #0F3040, #D99B7F);
-    border-radius:24px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-    overflow:hidden;
-    position:relative;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.08);
+    overflow: hidden;
+    position: relative;
 }
 .line::before{
     content:"";
-    position:absolute;
-    width:200px;
-    height:200px;
-    background-color:rgba(213,134,104,0.18);
-    border-radius:50%;
-    top:-40px;
-    right:-40px;
-    animation:flowtglow 5s ease-in-out infinite;
+    position: absolute;
+    width: 12.5rem;
+    height: 12.5rem;
+    background-color: rgba(213,134,104,0.18);
+    border-radius: 50%;
+    top: -2.5rem;
+    right: -2.5rem;
+    animation: flowtglow 5s ease-in-out infinite;
 }
 .line h2{
-    font-size:2.2rem;
+    font-size: 2.2rem;
     color: #1e6385;
-    margin:0;
-    z-index:1;
+    margin: 0;
+    z-index: 1;
 }
 .line p{
-    font-size:1rem;
+    font-size: 1rem;
     color: #dfdfdf;
-    margin-top:8px;
-    z-index:1;
+    margin-top: 0.5rem;
+    z-index: 1;
 }
 .line .idea-tags{
-    display:flex;
-    gap:12px;
-    z-index:1;
+    display: flex;
+    gap: 0.75rem;
+    z-index: 1;
 }
 .line .idea-tags span{
-    background:#0F3040;
-    color:WHITE;
-    padding:10px 16px;
-    border-radius:999px;
-    font-size:0.9rem;
-    animation:floatcard 3s ease-in-out infinite;
+    background: #0F3040;
+    color: WHITE;
+    padding: 0.625rem 1rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    animation: floatcard 3s ease-in-out infinite;
 }
 @keyframes floatGlow{
     0%, 100%{
@@ -426,35 +426,35 @@ a {
     }
 }
 .box3 {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     background: linear-gradient(135deg, #0F3040, #D99B7F);
-    border: 2px solid black;
-    border-radius: 40px;
+    border: 0.125rem solid black;
+    border-radius: 2.5rem;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .box3:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.625rem) scale(1.03);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.25);
 }
 
 .box3 p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px 0px 12px 30px;
+    margin: 0.75rem 0 0.75rem 1.875rem;
     background-color: antiquewhite;
-    border-radius: 40px;
-    width: 200px;
+    border-radius: 2.5rem;
+    width: 12.5rem;
 }
 
 .imagebox-3 {
-    margin: 15px 25px 15px 30px;
-    height: 200px;
-    width: 200px;
+    margin: 0.9375rem 1.5625rem 0.9375rem 1.875rem;
+    height: 12.5rem;
+    width: 12.5rem;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
@@ -464,35 +464,35 @@ a {
 }
 
 .box4 {
-    height: 300px;
-    width: 300px;
+    height: 18.75rem;
+    width: 18.75rem;
     background: linear-gradient(135deg, #0F3040, #D99B7F);
-    border: 2px solid black;
-    border-radius: 40px;
+    border: 0.125rem solid black;
+    border-radius: 2.5rem;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .box4:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    transform: translateY(-0.625rem) scale(1.03);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.25);
 }
 
 .box4 p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 12px 0px 12px 30px;
+    margin: 0.75rem 0 0.75rem 1.875rem;
     background-color: antiquewhite;
-    border-radius: 40px;
-    width: 200px;
+    border-radius: 2.5rem;
+    width: 12.5rem;
 }
 
 .imagebox-4 {
-    margin: 15px 25px 15px 30px;
-    height: 200px;
-    width: 200px;
+    margin: 0.9375rem 1.5625rem 0.9375rem 1.875rem;
+    height: 12.5rem;
+    width: 12.5rem;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
@@ -509,19 +509,19 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
 }
 
 .login-page {
     background: linear-gradient(135deg, #0F3040, #D99B7F);
-    width: 1100px;
-    min-height: 420px;
-    border-radius: 30px;
-    padding: 40px;
+    width: 68.75rem;
+    min-height: 26.25rem;
+    border-radius: 1.875rem;
+    padding: 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
+    gap: 2.5rem;
     box-sizing: border-box;
 }
 
@@ -532,53 +532,53 @@ a {
 }
 
 .login-side h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
+    font-size: 4.375rem;
+    margin-bottom: 1.25rem;
     color: #e7ae80e3;
 }
 
 .login-side p {
-    font-size: 22px;
+    font-size: 1.375rem;
     line-height: 1.6;
-    max-width: 420px;
+    max-width: 26.25rem;
 }
 
 .login-form {
     flex: 1;
-    max-width: 420px;
+    max-width: 26.25rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     background-color: rgba(255, 255, 255, 0.12);
-    padding: 25px;
-    border-radius: 20px;
+    padding: 1.5625rem;
+    border-radius: 1.25rem;
 }
 
 #name,
 #email,
 #dob,
 #describe-idea {
-    margin-bottom: 18px;
-    height: 45px;
+    margin-bottom: 1.125rem;
+    height: 2.8125rem;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
     background-color: #ceafa0;
-    font-size: 16px;
-    padding: 0 14px;
+    font-size: 1rem;
+    padding: 0 0.875rem;
     box-sizing: border-box;
 }
 
 #describe-idea {
-    height: 80px;
+    height: 5rem;
 }
 
 .login-button{
-    height: 45px;
+    height: 2.8125rem;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     border: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     background-color: #bd5424;
     color: white;
@@ -586,28 +586,28 @@ a {
 }
 
 .about-section {
-    margin-top: 50px;
-    padding: 40px;
+    margin-top: 3.125rem;
+    padding: 2.5rem;
     background: linear-gradient(135deg, #f5e8de, #d99b7f);
-    border-radius: 28px;
+    border-radius: 1.75rem;
     color: #0f3040;
-    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.875rem 2.5rem rgba(0, 0, 0, 0.12);
 }
 
 .about-intro {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .about-intro h2 {
-    font-size: 42px;
-    margin-bottom: 12px;
+    font-size: 2.625rem;
+    margin-bottom: 0.75rem;
     color: #0f3040;
 }
 
 .about-intro p {
-    font-size: 18px;
-    max-width: 760px;
+    font-size: 1.125rem;
+    max-width: 47.5rem;
     margin: 0 auto;
     line-height: 1.7;
 }
@@ -615,31 +615,31 @@ a {
 .team-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .team-card {
     background: rgba(255, 255, 255, 0.72);
-    border-radius: 20px;
-    padding: 24px;
-    box-shadow: 0 10px 24px rgba(15, 48, 64, 0.12);
+    border-radius: 1.25rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.625rem 1.5rem rgba(15, 48, 64, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .team-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 16px 32px rgba(15, 48, 64, 0.18);
+    transform: translateY(-0.375rem);
+    box-shadow: 0 1rem 2rem rgba(15, 48, 64, 0.18);
 }
 
 .team-card h3 {
-    font-size: 28px;
-    margin-bottom: 8px;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
     color: #0f3040;
 }
 
 .role {
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #7a3f2c;
 }
 
@@ -650,99 +650,99 @@ a {
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 18px;
+    gap: 0.625rem;
+    margin-top: 1.125rem;
 }
 
 .social-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 0.5rem;
     text-decoration: none;
     background: #0f3040;
     color: #ffffff;
-    padding: 10px 14px;
+    padding: 0.625rem 0.875rem;
     border-radius: 999px;
-    font-size: 14px;
+    font-size: 0.875rem;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .social-link:hover {
     background: #7a3f2c;
-    transform: translateY(-2px);
+    transform: translateY(-0.125rem);
 } 
 
 #login-page-about{
-    align-items:center;
+    align-items: center;
 }
 .sublogin{
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
 }
 #login-page-about h2{
-    font-size: 42px;
-    margin-bottom: 12px;
+    font-size: 2.625rem;
+    margin-bottom: 0.75rem;
     color: #0f3040;
-    padding-left:30rem;
+    padding-left: 1.875rem;
 }
 /* this is the discover file css code  */
 .line {
-    margin: 40px;
-    padding: 30px;
-     min-height: 120px;
-     background: linear-gradient(135deg, #0F3040, #D99B7F);
-     border-radius: 24px;
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-     position: relative;
-     overflow: hidden;
+    margin: 2.5rem;
+    padding: 1.875rem;
+    min-height: 7.5rem;
+    background: linear-gradient(135deg, #0F3040, #D99B7F);
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.625rem 1.875rem rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
 
 }
 .content {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    padding: 0 40px 50px 40px;
+    gap: 1.875rem;
+    padding: 0 2.5rem 3.125rem 2.5rem;
     justify-content: center;
 }
 
 .idea-card {
-    width: 340px;
+    width: 21.25rem;
     background: linear-gradient(135deg, #0F3040, #D99B7F);
-    border: 2px solid black;
-    border-radius: 30px;
-    padding: 25px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border: 0.125rem solid black;
+    border-radius: 1.875rem;
+    padding: 1.5625rem;
+    box-shadow: 0 0.625rem 1.5625rem rgba(0,0,0,0.2);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .idea-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-0.625rem) scale(1.02);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.3);
 }
 
 .badge {
     background: #D99B7F;
     color: #0F3040;
-    padding: 5px 12px;
-    border-radius: 20px;
+    padding: 0.3125rem 0.75rem;
+    border-radius: 1.25rem;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 0.875rem;
     display: inline-block;
 }
 
 .idea-card h3 {
     color: white;
-    margin-top: 15px;
-    font-size: 22px;
+    margin-top: 0.9375rem;
+    font-size: 1.375rem;
 }
 
 .idea-card p {
     color: #dfdfdf;
-    font-size: 14px;
-    margin: 15px 0;
+    font-size: 0.875rem;
+    margin: 0.9375rem 0;
     line-height: 1.5;
 }
 
@@ -750,7 +750,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .upvotes {
